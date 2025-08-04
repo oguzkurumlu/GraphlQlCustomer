@@ -25,7 +25,8 @@ builder.Services
     .AddAuthorization()
     .AddQueryType<Query>()
     .AddType<CustomerType>()
-    .AddProjections();
+    .AddProjections()
+    .AddFiltering();
 
 var app = builder.Build();
 

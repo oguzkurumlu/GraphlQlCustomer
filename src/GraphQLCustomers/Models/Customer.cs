@@ -9,4 +9,6 @@ public class Customer
     public string? Email { get; set; }
 
     public string? Salary { get; set; }
+
+    public IList<Address> Addresses { get; set; } = new List<Address>();
 }

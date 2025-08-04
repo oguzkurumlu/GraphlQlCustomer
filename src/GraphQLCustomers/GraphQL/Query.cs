@@ -9,6 +9,7 @@ namespace GraphQLCustomers.GraphQL;
 public class Query
 {
     [UseProjection]
+    [UseFiltering]
     public IQueryable<Customer> GetCustomers([Service] IDbContextFactory<AppDbContext> dbFactory)
     {
         var db = dbFactory.CreateDbContext();
